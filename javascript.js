@@ -3,11 +3,13 @@ let strt = document.querySelector(".strt");
 let whole = document.querySelector(".whole");
 let startName = document.querySelector(".startName");
 let user = document.querySelector(".user");
+let pass = document.querySelector(".pass");
 let button = document.querySelector(".button");
 let cCopy = document.querySelector(".cCopy");
 let eCopy = document.querySelector(".eCopy");
 let iCopy = document.querySelector(".iCopy");
 let copyWhole = document.querySelector(".copyWhole");
+let pCopy = document.querySelector(".pCopy");
 
 
 let alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -36,6 +38,7 @@ button.addEventListener('click' , () => {
     }
     startName.innerHTML = newNameEmail;
     user.innerHTML = newNameEmail;
+    pass.innerHTML = "Utpal666";
 })
 
 cCopy.addEventListener('click', () => {
@@ -48,6 +51,10 @@ iCopy.addEventListener('click', () => {
 
 eCopy.addEventListener('click', () => {
     navigator.clipboard.writeText(newNameEmail + "@gmail.com")
+})
+
+pCopy.addEventListener('click', () => {
+    navigator.clipboard.writeText(pass.innerHTML)
 })
 
 copyWhole.addEventListener('click', () => {
